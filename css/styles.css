@@ -102,17 +102,27 @@ img {
 
 }
 .contacts-link {
-    color: var(--text-color);
     font-style: normal;
     text-decoration: none;
+}
+.header .contacts-link{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+.contacts-link > .icon {
+    margin-right: 10px;
+    fill: currentColor;
+    
 }
 .sait-nav .link:hover,
 .sait-nav .link:focus,
 .contacts-link:hover,
 .contacts-link:focus,
 .contacts-link.adds:hover,
-.contacts-link.adds:focus {
-
+.contacts-link.adds:focus,
+.footer .contacts-link:hover,
+.footer .contacts-link:focus {
     color: var(--accent-color);
 }
 
@@ -187,13 +197,18 @@ img {
 
     line-height: 1.71;
 }
+.footer-contacts-item {
+
+}
 .footer-contacts-item:not(:last-child) {
     margin-bottom: 9px;
+}
+.footer .contacts-link {
+    color: rgba(255, 255, 255, 0.6);
 }
 .contacts-link.adds {
     color: var(--primery-bgr-color);
 }
-.footer-socials {}
 
 .footer-socials>.text {
     margin-top: 12px;
